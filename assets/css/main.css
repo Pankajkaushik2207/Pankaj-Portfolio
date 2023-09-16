@@ -71,6 +71,8 @@ ul li, ol li {
   letter-spacing: 0.1rem;
 }
 
+
+
 .hero-sub-heading {
   font-size: 20px;
   font-weight: 400;
@@ -1056,7 +1058,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 /* Footer Area Start */
 .footer-area {
-  background: #1C1C20;
+  background: #333;
 }
 
 .footer-area .footer-text p {

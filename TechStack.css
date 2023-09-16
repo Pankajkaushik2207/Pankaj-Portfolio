@@ -1,14 +1,98 @@
+/* Apply styling to the entire body */
 body {
-    margin: 30px;
-    padding: 30px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light gray background color */
+    color: #333; /* Dark text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
-
-.bold {
-    color: snow;
-    font-weight: bold;
-}
-
-h3{
-    color: cornsilk;
-}
-
+  
+  /* Style the container */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  /* Style the header */
+  h1 {
+    color: #0077b6; /* Deep blue header text color */
+    font-size: 36px;
+    text-transform: uppercase; /* Uppercase text */
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  
+  /* Style the date */
+  p {
+    color: #777; /* Gray text color */
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+  
+  /* Style the section boxes */
+  .section-box {
+    background-color: #ffffff; /* White background color for section boxes */
+    border-radius: 10px; /* Rounded corners for section boxes */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight box shadow for depth */
+    transition: transform 0.2s, background-color 0.2s; /* Transition properties */
+  }
+  
+  /* Style the section headings */
+  h3 {
+    color: #0077b6; /* Deep blue section headings */
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Style the lists */
+  ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  li {
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  /* Style list items with custom bullet icons */
+  li::before {
+    content: "\2022"; /* Bullet character */
+    color: #0077b6; /* Deep blue bullet color */
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Add a hover effect for list items */
+  .section-box:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    transform: scale(1.05); /* Enlarge on hover */
+  }
+  
+  /* Add a subtle border to list items on hover */
+  .section-box:hover::before {
+    border: 2px solid #0077b6; /* Deep blue border on hover */
+    border-radius: 50%;
+    padding: 3px;
+  }
+  
+  /* Style links */
+  a {
+    color: #0077b6; /* Deep blue link color */
+    text-decoration: none; /* Remove underlines */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
